@@ -6,7 +6,7 @@ class EditUser extends LitElement {
       user: { type: Object }
     };
   }
-  
+ 
   render () {
     return html`
     <head>
