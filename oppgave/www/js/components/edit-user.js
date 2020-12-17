@@ -13,11 +13,6 @@ class EditUser extends LitElement {
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
     <form onsubmit="javascript: return false;" id="userForm" method="POST">
-      <div class="form-group pt-5 ml-3" style="width: 30rem;">
-        <label for="email">Email</label>
-        <input class="form-control" id="uname" name="uname" type="text" value="${this.user.uname}" required>
-        <input type="hidden" id="uid" name="uid" value="${this.user.uid}">
-      </div>
       <div class="form-group pt-1 ml-3" style="width: 30rem;">
         <label for="firstName">First Name</label>
         <input class="form-control" id="firstName" name="firstName" type="text" value="${this.user.firstName}" required>
@@ -25,6 +20,11 @@ class EditUser extends LitElement {
       <div class="form-group pt-1 ml-3" style="width: 30rem;">
         <label for="lastName">Last Name</label>
         <input class="form-control" id="lastName" name="lastName" type="text" value="${this.user.lastName}" required>
+      </div>
+      <div class="form-group pt-5 ml-3" style="width: 30rem;">
+        <label for="email">Email</label>
+        <input class="form-control" id="uname" name="uname" type="text" value="${this.user.uname}" required>
+        <input type="hidden" id="uid" name="uid" value="${this.user.uid}">
       </div>
       <div class="form-group pt-1 ml-3" style="width: 30rem;">
         <label for="oldpassword">Old Password</label>
